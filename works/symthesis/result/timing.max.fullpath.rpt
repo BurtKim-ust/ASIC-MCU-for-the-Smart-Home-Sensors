@@ -1,0 +1,671 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 5
+Design : motion_sensor_chip_top
+Version: S-2021.06-SP2
+Date   : Sat Mar 28 00:31:24 2026
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WC0D72COM   Library: tcbn65gpluswc0d72
+Wire Load Model Mode: Inactive.
+
+  Startpoint: u_pmu/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: u_pmu/clk_gate_latch_reg
+            (falling edge-triggered flip-flop clocked by clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_4mhz (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/current_state_reg[1]/CP (DFSNQD2)                 0.00       0.00 r
+  u_pmu/current_state_reg[1]/Q (DFSNQD2)                  0.17       0.17 f
+  U5221/ZN (INVD1)                                        0.05 *     0.22 r
+  U10691/ZN (OAI21D0)                                     0.05 *     0.27 f
+  u_pmu/clk_gate_latch_reg/D (DFNSND1)                    0.00 *     0.27 f
+  data arrival time                                                  0.27
+
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  clock uncertainty                                      -0.09     124.91
+  u_pmu/clk_gate_latch_reg/CPN (DFNSND1)                  0.00     124.91 f
+  library setup time                                     -0.03     124.88
+  data required time                                               124.88
+  --------------------------------------------------------------------------
+  data required time                                               124.88
+  data arrival time                                                 -0.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                      124.62
+
+
+  Startpoint: u_pmu/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: u_pmu/clk_gate_latch_reg
+            (falling edge-triggered flip-flop clocked by clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_4mhz (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/current_state_reg[1]/CP (DFSNQD2)                 0.00       0.00 r
+  u_pmu/current_state_reg[1]/Q (DFSNQD2)                  0.17       0.17 f
+  U5221/ZN (INVD1)                                        0.05 *     0.22 r
+  U10691/ZN (OAI21D0)                                     0.05 *     0.26 f
+  u_pmu/clk_gate_latch_reg/D (DFNSND1)                    0.00 *     0.26 f
+  data arrival time                                                  0.26
+
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  clock uncertainty                                      -0.09     124.91
+  u_pmu/clk_gate_latch_reg/CPN (DFNSND1)                  0.00     124.91 f
+  library setup time                                     -0.03     124.88
+  data required time                                               124.88
+  --------------------------------------------------------------------------
+  data required time                                               124.88
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                      124.62
+
+
+  Startpoint: u_pmu/clk_gate_latch_reg
+              (falling edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: u_pmu/U483 (gating element for clock clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  u_pmu/clk_gate_latch_reg/CPN (DFNSND1)                  0.00     125.00 f
+  u_pmu/clk_gate_latch_reg/Q (DFNSND1)                    0.17     125.17 r
+  u_pmu/U483/A1 (AN2D0)                                   0.00 *   125.17 r
+  data arrival time                                                125.17
+
+  clock clk_4mhz (rise edge)                            250.00     250.00
+  clock network delay (ideal)                             0.00     250.00
+  clock uncertainty                                      -0.09     249.91
+  u_pmu/U483/A2 (AN2D0)                                   0.00     249.91 r
+  clock gating setup time                                -0.09     249.82
+  data required time                                               249.82
+  --------------------------------------------------------------------------
+  data required time                                               249.82
+  data arrival time                                               -125.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                      124.65
+
+
+  Startpoint: u_pmu/clk_gate_latch_reg
+              (falling edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: u_pmu/U483 (gating element for clock clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  u_pmu/clk_gate_latch_reg/CPN (DFNSND1)                  0.00     125.00 f
+  u_pmu/clk_gate_latch_reg/Q (DFNSND1)                    0.15     125.15 f
+  u_pmu/U483/A1 (AN2D0)                                   0.00 *   125.15 f
+  data arrival time                                                125.15
+
+  clock clk_4mhz (rise edge)                            250.00     250.00
+  clock network delay (ideal)                             0.00     250.00
+  clock uncertainty                                      -0.09     249.91
+  u_pmu/U483/A2 (AN2D0)                                   0.00     249.91 r
+  clock gating setup time                                -0.09     249.82
+  data required time                                               249.82
+  --------------------------------------------------------------------------
+  data required time                                               249.82
+  data arrival time                                               -125.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                      124.67
+
+
+  Startpoint: u_cpu/mem_addr_reg[21]
+              (rising edge-triggered flip-flop clocked by clk_cpu)
+  Endpoint: u_pmu/flash_pwr_en_reg
+            (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_cpu (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u_cpu/mem_addr_reg[21]/CP (DFQD1)        0.00 #     0.00 r
+  u_cpu/mem_addr_reg[21]/Q (DFQD1)         0.16       0.16 f
+  U4453/ZN (NR4D0)                         0.09 *     0.24 r
+  U4454/ZN (ND4D1)                         0.06 *     0.31 f
+  U4455/ZN (NR4D8)                         0.24 *     0.55 r
+  U4456/ZN (ND2D1)                         0.04 *     0.59 f
+  U4476/ZN (NR2XD0)                        0.07 *     0.66 r
+  U4477/ZN (ND2D0)                         0.07 *     0.72 f
+  U4478/Z (OR2D0)                          0.10 *     0.82 f
+  U4479/ZN (NR2D3)                         0.07 *     0.89 r
+  U5691/ZN (INVD0)                         0.04 *     0.93 f
+  U5125/ZN (NR2XD1)                        0.05 *     0.98 r
+  U5134/ZN (INR2XD0)                       0.09 *     1.07 r
+  U5135/ZN (CKND2D2)                       0.06 *     1.13 f
+  U5813/ZN (INVD1)                         0.07 *     1.20 r
+  U7142/Z (AN2D0)                          0.08 *     1.28 r
+  U7144/ZN (AOI31D2)                       0.04 *     1.32 f
+  U7146/ZN (OAI32D4)                       0.14 *     1.46 r
+  U7147/ZN (ND2D0)                         0.05 *     1.51 f
+  u_pmu/flash_pwr_en_reg/D (DFSNQD2)       0.00 *     1.51 f
+  data arrival time                                   1.51
+
+  clock clk_4mhz (rise edge)             250.00     250.00
+  clock network delay (ideal)              0.00     250.00
+  clock uncertainty                       -0.09     249.91
+  u_pmu/flash_pwr_en_reg/CP (DFSNQD2)      0.00     249.91 r
+  library setup time                       0.00     249.91
+  data required time                                249.91
+  -----------------------------------------------------------
+  data required time                                249.91
+  data arrival time                                  -1.51
+  -----------------------------------------------------------
+  slack (MET)                                       248.40
+
+
+  Startpoint: u_pmu/u_timeout_counter/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/u_timeout_counter/counter_reg[12]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/u_timeout_counter/counter_reg[0]/CP (DFCNQD1)     0.00       0.00 r
+  u_pmu/u_timeout_counter/counter_reg[0]/Q (DFCNQD1)      0.18       0.18 r
+  U4604/ZN (INVD0)                                        0.04 *     0.22 f
+  U4606/ZN (NR2XD0)                                       0.04 *     0.26 r
+  U4607/ZN (ND2D0)                                        0.07 *     0.33 f
+  U4639/ZN (OAI21D1)                                      0.06 *     0.39 r
+  U4644/ZN (MAOI222D2)                                    0.13 *     0.52 f
+  U4646/ZN (MAOI222D2)                                    0.12 *     0.64 r
+  U4647/ZN (MAOI222D2)                                    0.12 *     0.76 f
+  U4648/ZN (MAOI222D2)                                    0.12 *     0.89 r
+  U4650/ZN (MAOI222D1)                                    0.04 *     0.93 f
+  U4652/ZN (ND2D0)                                        0.04 *     0.97 r
+  U4653/Z (OA21D0)                                        0.08 *     1.04 r
+  U4654/ZN (MAOI222D2)                                    0.12 *     1.17 f
+  U4657/ZN (MAOI222D2)                                    0.12 *     1.29 r
+  U4659/CON (FCICOND1)                                    0.05 *     1.33 f
+  U6033/ZN (INVD0)                                        0.05 *     1.38 r
+  U4662/ZN (MAOI222D2)                                    0.12 *     1.50 f
+  U4664/ZN (MAOI222D2)                                    0.12 *     1.62 r
+  U4666/CON (FCICOND1)                                    0.06 *     1.68 f
+  U4667/ZN (MAOI222D2)                                    0.14 *     1.81 r
+  U4668/ZN (MAOI222D2)                                    0.12 *     1.94 f
+  U4669/ZN (AOI21D4)                                      0.06 *     2.00 r
+  U6167/ZN (IND4D4)                                       0.08 *     2.08 f
+  U7168/Z (CKBD1)                                         0.09 *     2.17 f
+  U7697/Z (CKBD0)                                         0.08 *     2.25 f
+  U9568/Z (BUFFD1)                                        0.08 *     2.34 f
+  U6171/ZN (OAI22D1)                                      0.07 *     2.41 r
+  u_pmu/u_timeout_counter/counter_reg[12]/D (DFCNQD1)     0.00 *     2.41 r
+  data arrival time                                                  2.41
+
+  clock clk_32khz (rise edge)                         30518.00   30518.00
+  clock network delay (ideal)                             0.00   30518.00
+  clock uncertainty                                      -0.09   30517.91
+  u_pmu/u_timeout_counter/counter_reg[12]/CP (DFCNQD1)
+                                                          0.00   30517.91 r
+  library setup time                                     -0.02   30517.89
+  data required time                                             30517.89
+  --------------------------------------------------------------------------
+  data required time                                             30517.89
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                    30515.48
+
+
+  Startpoint: u_pmu/u_timeout_counter/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/u_timeout_counter/counter_reg[12]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/u_timeout_counter/counter_reg[0]/CP (DFCNQD1)     0.00       0.00 r
+  u_pmu/u_timeout_counter/counter_reg[0]/Q (DFCNQD1)      0.18       0.18 r
+  U4604/ZN (INVD0)                                        0.04 *     0.22 f
+  U4606/ZN (NR2XD0)                                       0.04 *     0.26 r
+  U4607/ZN (ND2D0)                                        0.07 *     0.33 f
+  U4639/ZN (OAI21D1)                                      0.06 *     0.39 r
+  U4644/ZN (MAOI222D2)                                    0.13 *     0.52 f
+  U4646/ZN (MAOI222D2)                                    0.12 *     0.64 r
+  U4647/ZN (MAOI222D2)                                    0.12 *     0.76 f
+  U4648/ZN (MAOI222D2)                                    0.12 *     0.89 r
+  U4650/ZN (MAOI222D1)                                    0.04 *     0.93 f
+  U4652/ZN (ND2D0)                                        0.04 *     0.97 r
+  U4653/Z (OA21D0)                                        0.08 *     1.04 r
+  U4654/ZN (MAOI222D2)                                    0.12 *     1.17 f
+  U4657/ZN (MAOI222D2)                                    0.12 *     1.29 r
+  U4659/CON (FCICOND1)                                    0.05 *     1.33 f
+  U6033/ZN (INVD0)                                        0.05 *     1.38 r
+  U4662/ZN (MAOI222D2)                                    0.12 *     1.50 f
+  U4664/ZN (MAOI222D2)                                    0.12 *     1.62 r
+  U4666/CON (FCICOND1)                                    0.06 *     1.68 f
+  U4667/ZN (MAOI222D2)                                    0.14 *     1.81 r
+  U4668/ZN (MAOI222D2)                                    0.12 *     1.94 f
+  U4669/ZN (AOI21D4)                                      0.06 *     2.00 r
+  U6167/ZN (IND4D4)                                       0.08 *     2.09 f
+  U7168/Z (CKBD1)                                         0.09 *     2.17 f
+  U7697/Z (CKBD0)                                         0.08 *     2.26 f
+  U9568/Z (BUFFD1)                                        0.08 *     2.34 f
+  U6171/ZN (OAI22D1)                                      0.07 *     2.41 r
+  u_pmu/u_timeout_counter/counter_reg[12]/D (DFCNQD1)     0.00 *     2.41 r
+  data arrival time                                                  2.41
+
+  clock clk_32khz (rise edge)                         30518.00   30518.00
+  clock network delay (ideal)                             0.00   30518.00
+  clock uncertainty                                      -0.09   30517.91
+  u_pmu/u_timeout_counter/counter_reg[12]/CP (DFCNQD1)
+                                                          0.00   30517.91 r
+  library setup time                                     -0.02   30517.89
+  data required time                                             30517.89
+  --------------------------------------------------------------------------
+  data required time                                             30517.89
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                    30515.48
+
+
+  Startpoint: u_pmu/u_timeout_counter/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/u_timeout_counter/counter_reg[5]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/u_timeout_counter/counter_reg[0]/CP (DFCNQD1)     0.00       0.00 r
+  u_pmu/u_timeout_counter/counter_reg[0]/Q (DFCNQD1)      0.18       0.18 r
+  U4604/ZN (INVD0)                                        0.04 *     0.22 f
+  U4606/ZN (NR2XD0)                                       0.04 *     0.26 r
+  U4607/ZN (ND2D0)                                        0.07 *     0.33 f
+  U4639/ZN (OAI21D1)                                      0.06 *     0.39 r
+  U4644/ZN (MAOI222D2)                                    0.13 *     0.52 f
+  U4646/ZN (MAOI222D2)                                    0.12 *     0.64 r
+  U4647/ZN (MAOI222D2)                                    0.12 *     0.76 f
+  U4648/ZN (MAOI222D2)                                    0.12 *     0.89 r
+  U4650/ZN (MAOI222D1)                                    0.04 *     0.93 f
+  U4652/ZN (ND2D0)                                        0.04 *     0.97 r
+  U4653/Z (OA21D0)                                        0.08 *     1.04 r
+  U4654/ZN (MAOI222D2)                                    0.12 *     1.17 f
+  U4657/ZN (MAOI222D2)                                    0.12 *     1.29 r
+  U4659/CON (FCICOND1)                                    0.05 *     1.33 f
+  U6033/ZN (INVD0)                                        0.05 *     1.38 r
+  U4662/ZN (MAOI222D2)                                    0.12 *     1.50 f
+  U4664/ZN (MAOI222D2)                                    0.12 *     1.62 r
+  U4666/CON (FCICOND1)                                    0.06 *     1.68 f
+  U4667/ZN (MAOI222D2)                                    0.14 *     1.81 r
+  U4668/ZN (MAOI222D2)                                    0.12 *     1.94 f
+  U4669/ZN (AOI21D4)                                      0.06 *     2.00 r
+  U6167/ZN (IND4D4)                                       0.08 *     2.09 f
+  U7168/Z (CKBD1)                                         0.09 *     2.17 f
+  U7697/Z (CKBD0)                                         0.08 *     2.26 f
+  U9568/Z (BUFFD1)                                        0.08 *     2.34 f
+  U6184/ZN (OAI22D1)                                      0.07 *     2.41 r
+  u_pmu/u_timeout_counter/counter_reg[5]/D (DFCNQD1)      0.00 *     2.41 r
+  data arrival time                                                  2.41
+
+  clock clk_32khz (rise edge)                         30518.00   30518.00
+  clock network delay (ideal)                             0.00   30518.00
+  clock uncertainty                                      -0.09   30517.91
+  u_pmu/u_timeout_counter/counter_reg[5]/CP (DFCNQD1)     0.00   30517.91 r
+  library setup time                                     -0.02   30517.89
+  data required time                                             30517.89
+  --------------------------------------------------------------------------
+  data required time                                             30517.89
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                    30515.48
+
+
+  Startpoint: u_pmu/u_timeout_counter/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/u_timeout_counter/counter_reg[4]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/u_timeout_counter/counter_reg[0]/CP (DFCNQD1)     0.00       0.00 r
+  u_pmu/u_timeout_counter/counter_reg[0]/Q (DFCNQD1)      0.18       0.18 r
+  U4604/ZN (INVD0)                                        0.04 *     0.22 f
+  U4606/ZN (NR2XD0)                                       0.04 *     0.26 r
+  U4607/ZN (ND2D0)                                        0.07 *     0.33 f
+  U4639/ZN (OAI21D1)                                      0.06 *     0.39 r
+  U4644/ZN (MAOI222D2)                                    0.13 *     0.52 f
+  U4646/ZN (MAOI222D2)                                    0.12 *     0.64 r
+  U4647/ZN (MAOI222D2)                                    0.12 *     0.76 f
+  U4648/ZN (MAOI222D2)                                    0.12 *     0.89 r
+  U4650/ZN (MAOI222D1)                                    0.04 *     0.93 f
+  U4652/ZN (ND2D0)                                        0.04 *     0.97 r
+  U4653/Z (OA21D0)                                        0.08 *     1.04 r
+  U4654/ZN (MAOI222D2)                                    0.12 *     1.17 f
+  U4657/ZN (MAOI222D2)                                    0.12 *     1.29 r
+  U4659/CON (FCICOND1)                                    0.05 *     1.33 f
+  U6033/ZN (INVD0)                                        0.05 *     1.38 r
+  U4662/ZN (MAOI222D2)                                    0.12 *     1.50 f
+  U4664/ZN (MAOI222D2)                                    0.12 *     1.62 r
+  U4666/CON (FCICOND1)                                    0.06 *     1.68 f
+  U4667/ZN (MAOI222D2)                                    0.14 *     1.81 r
+  U4668/ZN (MAOI222D2)                                    0.12 *     1.94 f
+  U4669/ZN (AOI21D4)                                      0.06 *     2.00 r
+  U6167/ZN (IND4D4)                                       0.08 *     2.09 f
+  U7168/Z (CKBD1)                                         0.09 *     2.17 f
+  U7697/Z (CKBD0)                                         0.08 *     2.26 f
+  U9568/Z (BUFFD1)                                        0.08 *     2.34 f
+  U6217/ZN (OAI22D1)                                      0.07 *     2.41 r
+  u_pmu/u_timeout_counter/counter_reg[4]/D (DFCNQD1)      0.00 *     2.41 r
+  data arrival time                                                  2.41
+
+  clock clk_32khz (rise edge)                         30518.00   30518.00
+  clock network delay (ideal)                             0.00   30518.00
+  clock uncertainty                                      -0.09   30517.91
+  u_pmu/u_timeout_counter/counter_reg[4]/CP (DFCNQD1)     0.00   30517.91 r
+  library setup time                                     -0.02   30517.89
+  data required time                                             30517.89
+  --------------------------------------------------------------------------
+  data required time                                             30517.89
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                    30515.48
+
+
+  Startpoint: u_pmu/u_timeout_counter/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/u_timeout_counter/counter_reg[3]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/u_timeout_counter/counter_reg[0]/CP (DFCNQD1)     0.00       0.00 r
+  u_pmu/u_timeout_counter/counter_reg[0]/Q (DFCNQD1)      0.18       0.18 r
+  U4604/ZN (INVD0)                                        0.04 *     0.22 f
+  U4606/ZN (NR2XD0)                                       0.04 *     0.26 r
+  U4607/ZN (ND2D0)                                        0.07 *     0.33 f
+  U4639/ZN (OAI21D1)                                      0.06 *     0.39 r
+  U4644/ZN (MAOI222D2)                                    0.13 *     0.52 f
+  U4646/ZN (MAOI222D2)                                    0.12 *     0.64 r
+  U4647/ZN (MAOI222D2)                                    0.12 *     0.76 f
+  U4648/ZN (MAOI222D2)                                    0.12 *     0.89 r
+  U4650/ZN (MAOI222D1)                                    0.04 *     0.93 f
+  U4652/ZN (ND2D0)                                        0.04 *     0.97 r
+  U4653/Z (OA21D0)                                        0.08 *     1.04 r
+  U4654/ZN (MAOI222D2)                                    0.12 *     1.17 f
+  U4657/ZN (MAOI222D2)                                    0.12 *     1.29 r
+  U4659/CON (FCICOND1)                                    0.05 *     1.33 f
+  U6033/ZN (INVD0)                                        0.05 *     1.38 r
+  U4662/ZN (MAOI222D2)                                    0.12 *     1.50 f
+  U4664/ZN (MAOI222D2)                                    0.12 *     1.62 r
+  U4666/CON (FCICOND1)                                    0.06 *     1.68 f
+  U4667/ZN (MAOI222D2)                                    0.14 *     1.81 r
+  U4668/ZN (MAOI222D2)                                    0.12 *     1.94 f
+  U4669/ZN (AOI21D4)                                      0.06 *     2.00 r
+  U6167/ZN (IND4D4)                                       0.08 *     2.09 f
+  U7168/Z (CKBD1)                                         0.09 *     2.17 f
+  U7697/Z (CKBD0)                                         0.08 *     2.26 f
+  U9568/Z (BUFFD1)                                        0.08 *     2.34 f
+  U6187/ZN (OAI22D1)                                      0.07 *     2.41 r
+  u_pmu/u_timeout_counter/counter_reg[3]/D (DFCNQD1)      0.00 *     2.41 r
+  data arrival time                                                  2.41
+
+  clock clk_32khz (rise edge)                         30518.00   30518.00
+  clock network delay (ideal)                             0.00   30518.00
+  clock uncertainty                                      -0.09   30517.91
+  u_pmu/u_timeout_counter/counter_reg[3]/CP (DFCNQD1)     0.00   30517.91 r
+  library setup time                                     -0.02   30517.89
+  data required time                                             30517.89
+  --------------------------------------------------------------------------
+  data required time                                             30517.89
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                    30515.48
+
+
+  Startpoint: u_pmu/rtc_counter_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_cpu/instr_mret_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                         213626.00  213626.00
+  clock network delay (ideal)                             0.00   213626.00
+  u_pmu/rtc_counter_reg[3]/CP (DFCNQD1)                   0.00   213626.00 r
+  u_pmu/rtc_counter_reg[3]/Q (DFCNQD1)                    0.17   213626.17 f
+  U5881/ZN (AOI22D0)                                      0.05 * 213626.22 r
+  U5884/ZN (ND4D0)                                        0.08 * 213626.30 f
+  U5885/ZN (AOI32D0)                                      0.09 * 213626.39 r
+  U5886/ZN (ND2D0)                                        0.06 * 213626.45 f
+  U5887/ZN (AOI22D1)                                      0.08 * 213626.53 r
+  U5888/ZN (OAI211D2)                                     0.06 * 213626.59 f
+  U6000/ZN (INVD1)                                        0.05 * 213626.64 r
+  U9155/Z (AN3D0)                                         0.09 * 213626.73 r
+  U10704/ZN (ND4D0)                                       0.08 * 213626.81 f
+  U10705/ZN (NR4D0)                                       0.09 * 213626.91 r
+  U10706/ZN (ND4D1)                                       0.09 * 213627.00 f
+  U10707/Z (OR4D0)                                        0.14 * 213627.14 f
+  U10708/ZN (OAI32D1)                                     0.06 * 213627.20 r
+  u_cpu/instr_mret_reg/D (DFCNQD1)                        0.00 * 213627.20 r
+  data arrival time                                              213627.20
+
+  clock clk_cpu (rise edge)                           213750.00  213750.00
+  clock network delay (ideal)                             0.00   213750.00
+  clock uncertainty                                      -0.09   213749.91
+  u_cpu/instr_mret_reg/CP (DFCNQD1)                       0.00   213749.91 r
+  library setup time                                     -0.02   213749.88
+  data required time                                             213749.88
+  --------------------------------------------------------------------------
+  data required time                                             213749.88
+  data arrival time                                              -213627.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                      122.67
+
+
+  Startpoint: u_pmu/rtc_counter_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_cpu/instr_mret_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                         213626.00  213626.00
+  clock network delay (ideal)                             0.00   213626.00
+  u_pmu/rtc_counter_reg[3]/CP (DFCNQD1)                   0.00   213626.00 r
+  u_pmu/rtc_counter_reg[3]/Q (DFCNQD1)                    0.17   213626.17 f
+  U5881/ZN (AOI22D0)                                      0.05 * 213626.22 r
+  U5884/ZN (ND4D0)                                        0.08 * 213626.30 f
+  U5885/ZN (AOI32D0)                                      0.09 * 213626.39 r
+  U5886/ZN (ND2D0)                                        0.06 * 213626.45 f
+  U5887/ZN (AOI22D1)                                      0.08 * 213626.53 r
+  U5888/ZN (OAI211D2)                                     0.06 * 213626.59 f
+  U6000/ZN (INVD1)                                        0.05 * 213626.64 r
+  U9155/Z (AN3D0)                                         0.09 * 213626.73 r
+  U10704/ZN (ND4D0)                                       0.08 * 213626.81 f
+  U10705/ZN (NR4D0)                                       0.09 * 213626.91 r
+  U10706/ZN (ND4D1)                                       0.09 * 213627.00 f
+  U10707/Z (OR4D0)                                        0.14 * 213627.14 f
+  U10708/ZN (OAI32D1)                                     0.06 * 213627.20 r
+  u_cpu/instr_mret_reg/D (DFCNQD1)                        0.00 * 213627.20 r
+  data arrival time                                              213627.20
+
+  clock clk_cpu (rise edge)                           213750.00  213750.00
+  clock network delay (ideal)                             0.00   213750.00
+  clock uncertainty                                      -0.09   213749.91
+  u_cpu/instr_mret_reg/CP (DFCNQD1)                       0.00   213749.91 r
+  library setup time                                     -0.02   213749.88
+  data required time                                             213749.88
+  --------------------------------------------------------------------------
+  data required time                                             213749.88
+  data arrival time                                              -213627.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                      122.67
+
+
+  Startpoint: u_pmu/rtc_counter_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_cpu/instr_wfi_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                         213626.00  213626.00
+  clock network delay (ideal)                             0.00   213626.00
+  u_pmu/rtc_counter_reg[3]/CP (DFCNQD1)                   0.00   213626.00 r
+  u_pmu/rtc_counter_reg[3]/Q (DFCNQD1)                    0.17   213626.17 f
+  U5881/ZN (AOI22D0)                                      0.05 * 213626.22 r
+  U5884/ZN (ND4D0)                                        0.08 * 213626.30 f
+  U5885/ZN (AOI32D0)                                      0.09 * 213626.39 r
+  U5886/ZN (ND2D0)                                        0.06 * 213626.45 f
+  U5887/ZN (AOI22D1)                                      0.08 * 213626.53 r
+  U5888/ZN (OAI211D2)                                     0.06 * 213626.59 f
+  U6000/ZN (INVD1)                                        0.05 * 213626.64 r
+  U9155/Z (AN3D0)                                         0.09 * 213626.73 r
+  U10704/ZN (ND4D0)                                       0.08 * 213626.81 f
+  U10705/ZN (NR4D0)                                       0.09 * 213626.91 r
+  U10706/ZN (ND4D1)                                       0.09 * 213627.00 f
+  U10899/ZN (INR4D0)                                      0.06 * 213627.06 r
+  U10900/ZN (AOI32D0)                                     0.08 * 213627.14 f
+  U10901/ZN (NR2XD0)                                      0.05 * 213627.19 r
+  u_cpu/instr_wfi_reg/D (DFCNQD1)                         0.00 * 213627.19 r
+  data arrival time                                              213627.19
+
+  clock clk_cpu (rise edge)                           213750.00  213750.00
+  clock network delay (ideal)                             0.00   213750.00
+  clock uncertainty                                      -0.09   213749.91
+  u_cpu/instr_wfi_reg/CP (DFCNQD1)                        0.00   213749.91 r
+  library setup time                                     -0.01   213749.89
+  data required time                                             213749.89
+  --------------------------------------------------------------------------
+  data required time                                             213749.89
+  data arrival time                                              -213627.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                      122.70
+
+
+  Startpoint: u_pmu/rtc_counter_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_cpu/instr_wfi_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                         213626.00  213626.00
+  clock network delay (ideal)                             0.00   213626.00
+  u_pmu/rtc_counter_reg[3]/CP (DFCNQD1)                   0.00   213626.00 r
+  u_pmu/rtc_counter_reg[3]/Q (DFCNQD1)                    0.17   213626.17 f
+  U5881/ZN (AOI22D0)                                      0.05 * 213626.22 r
+  U5884/ZN (ND4D0)                                        0.08 * 213626.30 f
+  U5885/ZN (AOI32D0)                                      0.09 * 213626.39 r
+  U5886/ZN (ND2D0)                                        0.06 * 213626.45 f
+  U5887/ZN (AOI22D1)                                      0.08 * 213626.53 r
+  U5888/ZN (OAI211D2)                                     0.06 * 213626.59 f
+  U6000/ZN (INVD1)                                        0.05 * 213626.64 r
+  U9155/Z (AN3D0)                                         0.09 * 213626.73 r
+  U10704/ZN (ND4D0)                                       0.08 * 213626.81 f
+  U10705/ZN (NR4D0)                                       0.09 * 213626.91 r
+  U10706/ZN (ND4D1)                                       0.09 * 213627.00 f
+  U10899/ZN (INR4D0)                                      0.06 * 213627.06 r
+  U10900/ZN (AOI32D0)                                     0.08 * 213627.14 f
+  U10901/ZN (NR2XD0)                                      0.05 * 213627.19 r
+  u_cpu/instr_wfi_reg/D (DFCNQD1)                         0.00 * 213627.19 r
+  data arrival time                                              213627.19
+
+  clock clk_cpu (rise edge)                           213750.00  213750.00
+  clock network delay (ideal)                             0.00   213750.00
+  clock uncertainty                                      -0.09   213749.91
+  u_cpu/instr_wfi_reg/CP (DFCNQD1)                        0.00   213749.91 r
+  library setup time                                     -0.01   213749.89
+  data required time                                             213749.89
+  --------------------------------------------------------------------------
+  data required time                                             213749.89
+  data arrival time                                              -213627.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                      122.70
+
+
+  Startpoint: u_pmu/u_timeout_counter/counter_reg[7]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_cpu/reg_out_reg[22]
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                         213626.00  213626.00
+  clock network delay (ideal)                             0.00   213626.00
+  u_pmu/u_timeout_counter/counter_reg[7]/CP (DFCNQD1)     0.00   213626.00 r
+  u_pmu/u_timeout_counter/counter_reg[7]/Q (DFCNQD1)      0.17   213626.17 f
+  U8933/ZN (AOI22D0)                                      0.06 * 213626.23 r
+  U8938/ZN (ND4D0)                                        0.08 * 213626.31 f
+  U8939/Z (AO22D0)                                        0.11 * 213626.42 f
+  U8945/ZN (NR2XD1)                                       0.06 * 213626.48 r
+  U9064/ZN (OAI222D4)                                     0.12 * 213626.61 f
+  U9065/ZN (ND2D1)                                        0.06 * 213626.67 r
+  U9170/ZN (OAI31D4)                                      0.05 * 213626.72 f
+  U9161/Z (BUFFD1)                                        0.08 * 213626.80 f
+  U10112/Z (BUFFD1)                                       0.08 * 213626.88 f
+  U9232/ZN (AOI211D1)                                     0.08 * 213626.95 r
+  U9233/ZN (OAI211D0)                                     0.08 * 213627.03 f
+  u_cpu/reg_out_reg[22]/D (DFCNQD1)                       0.00 * 213627.03 f
+  data arrival time                                              213627.03
+
+  clock clk_cpu (rise edge)                           213750.00  213750.00
+  clock network delay (ideal)                             0.00   213750.00
+  clock uncertainty                                      -0.09   213749.91
+  u_cpu/reg_out_reg[22]/CP (DFCNQD1)                      0.00   213749.91 r
+  library setup time                                      0.00   213749.91
+  data required time                                             213749.91
+  --------------------------------------------------------------------------
+  data required time                                             213749.91
+  data arrival time                                              -213627.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                      122.88
+
+
+1

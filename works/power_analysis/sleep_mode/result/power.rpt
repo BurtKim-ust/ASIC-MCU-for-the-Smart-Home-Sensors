@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+        -verbose
+Design : pmu
+Version: S-2021.06-SP2
+Date   : Thu Feb 26 15:29:32 2026
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gplustc0d8 (File: /afs/ee.cooper.edu/dist/cadence-tools/tsmc65/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc0d8.db)
+
+
+Operating Conditions: WC0D72COM   Library: tcbn65gpluswc0d72
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+Warning: Cannot report correlated power unless power prediction mode is set. (PWR-727)
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (nW)
+--------------------------------------------------------------------------------
+Netlist Power                3.037e-05   1.428e-06   3.180e-05 (96%)  7.701e+03
+Estimated Clock Tree Power   N/A         N/A          (N/A)           N/A
+--------------------------------------------------------------------------------
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+register       2.7087e-05            0.0000        1.5249e+03        1.5521e-03  (  20.29%)            106
+sequential     2.1775e-06            0.0000        2.2580e+03        2.2602e-03  (  29.55%)            153
+combinational  1.1080e-06        1.3691e-06        3.8331e+03        3.8355e-03  (  50.15%)            924
+---------------------------------------------------------------------------------------------------------
+Total          3.0372e-05 mW     1.4280e-06 mW     7.6160e+03 nW     7.6478e-03 mW
+1

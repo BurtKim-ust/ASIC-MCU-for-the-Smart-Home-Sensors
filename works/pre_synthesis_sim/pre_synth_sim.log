@@ -1,0 +1,283 @@
+PS C:\Thesis\Design\publishment\works\pre_synthesis_sim> vvp motion_sensor_sim                                                                    
+WARNING: testbench_pre_synth_uart.v:322: $readmemh(motion_sensor_minimal.vhex): Not enough words in the file for the requested range [0:16383].
+======================================================
+SPI Flash Model Loaded
+Flash[0] = 20002137
+Flash[1] = ffc10113
+VCD info: dumpfile pre_synth_sim.vcd opened for output.
+
+======================================================
+ MOTION SENSOR IOT CHIP, PRE-SYNTHESIS SIMULATION     
+ UART Zigbee Firmware                                  
+ Auto-Stop After One Complete Cycle                    
+======================================================
+
+[0 ms] CPU Clock Gate: ENABLED
+[0 ms] PMU -> ACTIVE
+[CLK_CPU] Edge #1 @ 125000
+[CLK_CPU] Edge #2 @ 375000
+[CLK_CPU] Edge #3 @ 625000
+[CLK_CPU] Edge #4 @ 875000
+[CLK_CPU] Edge #5 @ 1125000
+[CLK_CPU] Edge #1000 @ 249875000
+[CLK_CPU] Edge #2000 @ 499875000
+[CLK_CPU] Edge #3000 @ 749875000
+[CLK_CPU] Edge #4000 @ 999875000
+[1000 ms] Releasing reset...
+[1000 ms] CPU reset hold expired
+[POST-RESET +500ns] debug_state=0011 gate=1 trap=0 spi_cs=1
+[POST-RESET +5us] debug_state=0011 gate=1 trap=0 spi_cs=1
+[POST-RESET +130us] debug_state=0011 gate=1 trap=0 spi_cs=0
+[CLK_CPU] Edge #5000 @ 1249875000
+[CLK_CPU] Edge #6000 @ 1499875000
+[CLK_CPU] Edge #7000 @ 1749875000
+[CLK_CPU] Edge #8000 @ 1999875000
+[CLK_CPU] Edge #9000 @ 2249875000
+[CLK_CPU] Edge #10000 @ 2499875000
+
+======================================================
+
+2ms POST-RESET STATE CHECK
+  clk_cpu edges:     12090
+  clk_gate_latch:    1
+  clk_cpu:           1
+  cpu_reset:         0
+  cpu_trap:          0
+  cpu_do_wfi:        0
+  cpu_mem_valid_raw: 1
+  debug_state:       0011
+  debug_clk_cpu_en:  1
+  flash_spi_cs_n:    0
+======================================================
+
+[11000 ms] debug_state=0011  gate=1  trap=0  spi_cs=1  spi_clk=0  clk_edges=44090  gpio=00000000
+[21000 ms] debug_state=0011  gate=1  trap=0  spi_cs=1  spi_clk=0  clk_edges=84090  gpio=00000000
+[31000 ms] debug_state=0011  gate=1  trap=0  spi_cs=0  spi_clk=0  clk_edges=124090  gpio=00000000
+[41000 ms] debug_state=0011  gate=1  trap=0  spi_cs=0  spi_clk=1  clk_edges=164090  gpio=00000000
+[51000 ms] debug_state=0011  gate=1  trap=0  spi_cs=0  spi_clk=0  clk_edges=204090  gpio=00000000
+[61000 ms] debug_state=0011  gate=1  trap=0  spi_cs=0  spi_clk=1  clk_edges=244090  gpio=00000000
+[71000 ms] debug_state=0011  gate=1  trap=0  spi_cs=0  spi_clk=0  clk_edges=284090  gpio=00000000
+[81000 ms] debug_state=0011  gate=1  trap=0  spi_cs=0  spi_clk=1  clk_edges=324090  gpio=00000000
+[91000 ms] debug_state=0011  gate=1  trap=0  spi_cs=1  spi_clk=0  clk_edges=364090  gpio=00000000
+[100000 ms] UART BUS WRITE: 'B' (0x42)
+[100000 ms] UART BUS WRITE: 'O' (0x4f)
+[100000 ms] UART BUS WRITE: 'O' (0x4f)
+[100000 ms] UART BUS WRITE: 'T' (0x54)
+[100000 ms] UART BUS WRITE: [0x0a]
+[100000 ms] UART BUS WRITE: 'T' (0x54)
+[100000 ms] UART BUS WRITE: '1' (0x31)
+[100000 ms] UART BUS WRITE: [0x0a]
+[100000 ms] UART BUS WRITE: 'F' (0x46)
+[100000 ms] UART BUS WRITE: [0x0a]
+[100000 ms] UART BUS WRITE: 'T' (0x54)
+[100000 ms] UART BUS WRITE: '2' (0x32)
+[100000 ms] UART BUS WRITE: [0x0a]
+[100000 ms] UART BUS WRITE: 'F' (0x46)
+[100000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'T' (0x54)
+[101000 ms] UART BUS WRITE: '3' (0x33)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] debug_state=0011  gate=1  trap=0  spi_cs=1  spi_clk=0  clk_edges=404090  gpio=00000000
+[101000 ms] UART BUS WRITE: 'F' (0x46)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'T' (0x54)
+[101000 ms] UART BUS WRITE: '4' (0x34)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'F' (0x46)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'T' (0x54)
+[101000 ms] UART BUS WRITE: '5' (0x35)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'F' (0x46)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'N' (0x4e)
+[101000 ms] UART BUS WRITE: 'O' (0x4f)
+[101000 ms] UART BUS WRITE: 'N' (0x4e)
+[101000 ms] UART BUS WRITE: 'E' (0x45)
+[101000 ms] UART BUS WRITE: 'T' (0x54)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'R' (0x52)
+[101000 ms] UART BUS WRITE: 'D' (0x44)
+[101000 ms] UART BUS WRITE: 'Y' (0x59)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] UART BUS WRITE: 'D' (0x44)
+[101000 ms] UART BUS WRITE: 'S' (0x53)
+[101000 ms] UART BUS WRITE: [0x0a]
+[101000 ms] CPU TRAP/WFI asserted
+[101000 ms] CPU Clock Gate: DISABLED
+[101000 ms] PMU -> DEEP_SLEEP
+
+======================================================
+ DEEP SLEEP ENTRY #1 @ 101000 ms
+======================================================
+[111000 ms] debug_state=0000  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=404766  gpio=00000000
+[121000 ms] debug_state=0000  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=404766  gpio=00000000
+
+======================================================
+ Triggering PIR @ 121000 ms
+   PMU State: 00  Clock Gate: 0
+======================================================
+
+[121000 ms] GPIO = 0x01
+
+======================================================
+ [121000 ms] PIR TRIGGERED
+   PMU State: 00  Clock Gate: 0  Trap: 1
+======================================================
+
+[121000 ms] CPU Clock Gate: ENABLED
+[121000 ms] PMU -> ACTIVE
+[121000 ms] CPU TRAP/WFI deasserted
+[121000 ms] UART BUS WRITE: 'P' (0x50)
+[121000 ms] UART BUS WRITE: 'I' (0x49)
+[121000 ms] UART BUS WRITE: 'R' (0x52)
+[121000 ms] UART BUS WRITE: [0x0a]
+[121000 ms] UART BUS WRITE: 'L' (0x4c)
+[121000 ms] UART BUS WRITE: 'O' (0x4f)
+[121000 ms] UART BUS WRITE: 'N' (0x4e)
+[121000 ms] UART BUS WRITE: [0x0a]
+[121000 ms] UART BUS WRITE: 'S' (0x53)
+[121000 ms] UART BUS WRITE: 'E' (0x45)
+[121000 ms] UART BUS WRITE: 'N' (0x4e)
+[121000 ms] UART BUS WRITE: 'T' (0x54)
+[121000 ms] UART BUS WRITE: [0x0a]
+[121000 ms] UART BUS WRITE: 'C' (0x43)
+[121000 ms] UART BUS WRITE: 'M' (0x4d)
+[121000 ms] UART BUS WRITE: [0x0a]
+[121000 ms] CPU TRAP/WFI asserted
+[121000 ms] CPU Clock Gate: DISABLED
+[121000 ms] PMU -> SLEEP
+[123000 ms] GPIO = 0x00
+[131000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[141000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[151000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[161000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[171000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[181000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[191000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[201000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[211000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[221000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[231000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[241000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[251000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[261000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[271000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[281000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[291000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[301000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[311000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[321000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[331000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[341000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[351000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[361000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[371000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[381000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[391000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[401000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[411000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[421000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[431000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[441000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[451000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[461000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[471000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[481000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[491000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[501000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[511000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[521000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[531000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[541000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[551000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[561000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[571000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[581000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[591000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[601000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[611000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[621000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[631000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[641000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[651000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[661000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[671000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[681000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[691000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[701000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[711000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[721000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[731000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[741000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[751000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[761000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[771000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[781000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[791000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[801000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[811000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[821000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[831000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[841000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[851000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[861000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[871000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[881000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[891000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[901000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[911000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[921000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[931000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[941000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[951000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[961000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[971000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[981000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[991000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1001000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1011000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1021000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1031000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1041000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1051000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1061000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1071000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1081000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1091000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1101000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1111000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1121000 ms] debug_state=0001  gate=0  trap=1  spi_cs=1  spi_clk=0  clk_edges=405266  gpio=00000000
+[1121000 ms] CPU Clock Gate: ENABLED
+[1121000 ms] PMU -> ACTIVE
+[1121000 ms] CPU TRAP/WFI deasserted
+[1121000 ms] UART BUS WRITE: 'T' (0x54)
+[1121000 ms] UART BUS WRITE: 'O' (0x4f)
+[1121000 ms] UART BUS WRITE: [0x0a]
+[1121000 ms] UART BUS WRITE: 'L' (0x4c)
+[1121000 ms] UART BUS WRITE: 'O' (0x4f)
+[1121000 ms] UART BUS WRITE: 'F' (0x46)
+[1121000 ms] UART BUS WRITE: 'F' (0x46)
+[1121000 ms] UART BUS WRITE: [0x0a]
+[1121000 ms] UART BUS WRITE: 'S' (0x53)
+[1121000 ms] UART BUS WRITE: 'E' (0x45)
+[1121000 ms] UART BUS WRITE: 'N' (0x4e)
+[1121000 ms] UART BUS WRITE: 'T' (0x54)
+[1121000 ms] UART BUS WRITE: [0x0a]
+[1121000 ms] UART BUS WRITE: 'D' (0x44)
+[1121000 ms] UART BUS WRITE: 'S' (0x53)
+[1121000 ms] UART BUS WRITE: [0x0a]
+[1121000 ms] CPU TRAP/WFI asserted
+[1121000 ms] CPU Clock Gate: DISABLED
+[1121000 ms] PMU -> DEEP_SLEEP
+
+======================================================
+ DEEP SLEEP ENTRY #2 @ 1121000 ms
+======================================================
+
+======================================================
+          SIMULATION COMPLETE                         
+      One Complete Cycle Executed                     
+======================================================
+
+testbench_pre_synth_uart.v:113: $finish called at 1121399875000 (1ps)

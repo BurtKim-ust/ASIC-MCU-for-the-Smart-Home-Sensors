@@ -1,0 +1,456 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 2
+        -max_paths 5
+Design : motion_sensor_chip_top
+Version: S-2021.06-SP2
+Date   : Sat Mar 28 00:31:24 2026
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: BC0D88COM   Library: tcbn65gplusbc0d88
+Wire Load Model Mode: Inactive.
+
+  Startpoint: u_pmu/clk_gate_latch_reg
+              (falling edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: u_pmu/U483 (gating element for clock clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  u_pmu/clk_gate_latch_reg/CPN (DFNSND1)                  0.00     125.00 f
+  u_pmu/clk_gate_latch_reg/Q (DFNSND1)                    0.15     125.15 f
+  u_pmu/U483/A1 (AN2D0)                                   0.00 *   125.15 f
+  data arrival time                                                125.15
+
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  clock uncertainty                                       0.13     125.13
+  u_pmu/U483/A2 (AN2D0)                                   0.00     125.13 f
+  clock gating hold time                                  0.13     125.26
+  data required time                                               125.26
+  --------------------------------------------------------------------------
+  data required time                                               125.26
+  data arrival time                                               -125.15
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_pmu/clk_gate_latch_reg
+              (falling edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: u_pmu/U483 (gating element for clock clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  u_pmu/clk_gate_latch_reg/CPN (DFNSND1)                  0.00     125.00 f
+  u_pmu/clk_gate_latch_reg/Q (DFNSND1)                    0.17     125.17 r
+  u_pmu/U483/A1 (AN2D0)                                   0.00 *   125.17 r
+  data arrival time                                                125.17
+
+  clock clk_4mhz (fall edge)                            125.00     125.00
+  clock network delay (ideal)                             0.00     125.00
+  clock uncertainty                                       0.13     125.13
+  u_pmu/U483/A2 (AN2D0)                                   0.00     125.13 f
+  clock gating hold time                                  0.13     125.26
+  data required time                                               125.26
+  --------------------------------------------------------------------------
+  data required time                                               125.26
+  data arrival time                                               -125.17
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: cpu_reset_pipe_reg[4]
+              (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: cpu_reset_pipe_reg[5]
+            (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_4mhz (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cpu_reset_pipe_reg[4]/CP (DFSNQD1)       0.00       0.00 r
+  cpu_reset_pipe_reg[4]/Q (DFSNQD1)        0.15       0.15 f
+  cpu_reset_pipe_reg[5]/D (DFSNQD1)        0.00 *     0.15 f
+  data arrival time                                   0.15
+
+  clock clk_4mhz (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.13       0.13
+  cpu_reset_pipe_reg[5]/CP (DFSNQD1)       0.00       0.13 r
+  library hold time                        0.05       0.18
+  data required time                                  0.18
+  -----------------------------------------------------------
+  data required time                                  0.18
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.02
+
+
+  Startpoint: cpu_reset_pipe_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: cpu_reset_pipe_reg[2]
+            (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_4mhz (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cpu_reset_pipe_reg[1]/CP (DFSNQD1)       0.00       0.00 r
+  cpu_reset_pipe_reg[1]/Q (DFSNQD1)        0.15       0.15 f
+  cpu_reset_pipe_reg[2]/D (DFSNQD1)        0.00 *     0.15 f
+  data arrival time                                   0.15
+
+  clock clk_4mhz (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.13       0.13
+  cpu_reset_pipe_reg[2]/CP (DFSNQD1)       0.00       0.13 r
+  library hold time                        0.05       0.18
+  data required time                                  0.18
+  -----------------------------------------------------------
+  data required time                                  0.18
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.02
+
+
+  Startpoint: cpu_reset_pipe_reg[5]
+              (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Endpoint: cpu_reset_pipe_reg[6]
+            (rising edge-triggered flip-flop clocked by clk_4mhz)
+  Path Group: clk_4mhz
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_4mhz (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cpu_reset_pipe_reg[5]/CP (DFSNQD1)       0.00       0.00 r
+  cpu_reset_pipe_reg[5]/Q (DFSNQD1)        0.15       0.15 f
+  cpu_reset_pipe_reg[6]/D (DFSNQD1)        0.00 *     0.15 f
+  data arrival time                                   0.15
+
+  clock clk_4mhz (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.13       0.13
+  cpu_reset_pipe_reg[6]/CP (DFSNQD1)       0.00       0.13 r
+  library hold time                        0.05       0.18
+  data required time                                  0.18
+  -----------------------------------------------------------
+  data required time                                  0.18
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.02
+
+
+  Startpoint: u_pmu/timeout_value_sync1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/timeout_value_sync2_reg[2]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/timeout_value_sync1_reg[2]/CP (DFSNQD1)           0.00       0.00 r
+  u_pmu/timeout_value_sync1_reg[2]/Q (DFSNQD1)            0.15       0.15 f
+  u_pmu/timeout_value_sync2_reg[2]/D (DFSNQD1)            0.00 *     0.15 f
+  data arrival time                                                  0.15
+
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_pmu/timeout_value_sync2_reg[2]/CP (DFSNQD1)           0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.15
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_pmu/timeout_value_sync1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/timeout_value_sync2_reg[0]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/timeout_value_sync1_reg[0]/CP (DFSNQD1)           0.00       0.00 r
+  u_pmu/timeout_value_sync1_reg[0]/Q (DFSNQD1)            0.16       0.16 f
+  u_pmu/timeout_value_sync2_reg[0]/D (DFSNQD1)            0.00 *     0.16 f
+  data arrival time                                                  0.16
+
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_pmu/timeout_value_sync2_reg[0]/CP (DFSNQD1)           0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.16
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_pmu/timeout_value_sync1_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/timeout_value_sync2_reg[3]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/timeout_value_sync1_reg[3]/CP (DFCNQD1)           0.00       0.00 r
+  u_pmu/timeout_value_sync1_reg[3]/Q (DFCNQD1)            0.16       0.16 f
+  u_pmu/timeout_value_sync2_reg[3]/D (DFCNQD1)            0.00 *     0.16 f
+  data arrival time                                                  0.16
+
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_pmu/timeout_value_sync2_reg[3]/CP (DFCNQD1)           0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.16
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_pmu/timeout_value_sync1_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/timeout_value_sync2_reg[1]
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/timeout_value_sync1_reg[1]/CP (DFCNQD1)           0.00       0.00 r
+  u_pmu/timeout_value_sync1_reg[1]/Q (DFCNQD1)            0.16       0.16 f
+  u_pmu/timeout_value_sync2_reg[1]/D (DFCNQD1)            0.00 *     0.16 f
+  data arrival time                                                  0.16
+
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_pmu/timeout_value_sync2_reg[1]/CP (DFCNQD1)           0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.16
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_pmu/wakeup_pir_en_sync1_reg
+              (rising edge-triggered flip-flop clocked by clk_32khz)
+  Endpoint: u_pmu/wakeup_pir_en_sync2_reg
+            (rising edge-triggered flip-flop clocked by clk_32khz)
+  Path Group: clk_32khz
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_pmu/wakeup_pir_en_sync1_reg/CP (DFCNQD1)              0.00       0.00 r
+  u_pmu/wakeup_pir_en_sync1_reg/Q (DFCNQD1)               0.16       0.16 f
+  u_pmu/wakeup_pir_en_sync2_reg/D (DFCNQD1)               0.00 *     0.16 f
+  data arrival time                                                  0.16
+
+  clock clk_32khz (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_pmu/wakeup_pir_en_sync2_reg/CP (DFCNQD1)              0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.16
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_cpu/clear_instr_wfi_reg
+              (rising edge-triggered flip-flop clocked by clk_cpu)
+  Endpoint: u_cpu/instr_wfi_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_cpu (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_cpu/clear_instr_wfi_reg/CP (EDFQD1)                   0.00 #     0.00 r
+  u_cpu/clear_instr_wfi_reg/Q (EDFQD1)                    0.14       0.14 r
+  U10901/ZN (NR2XD0)                                      0.02 *     0.16 f
+  u_cpu/instr_wfi_reg/D (DFCNQD1)                         0.00 *     0.16 f
+  data arrival time                                                  0.16
+
+  clock clk_cpu (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_cpu/instr_wfi_reg/CP (DFCNQD1)                        0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.16
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_uart0/rx_sync1_reg
+              (rising edge-triggered flip-flop clocked by clk_cpu)
+  Endpoint: u_uart0/rx_sync2_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_cpu (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u_uart0/rx_sync1_reg/CP (DFSNQD1)        0.00 #     0.00 r
+  u_uart0/rx_sync1_reg/Q (DFSNQD1)         0.16       0.16 f
+  u_uart0/rx_sync2_reg/D (DFSNQD2)         0.00 *     0.16 f
+  data arrival time                                   0.16
+
+  clock clk_cpu (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.13       0.13
+  u_uart0/rx_sync2_reg/CP (DFSNQD2)        0.00       0.13 r
+  library hold time                        0.05       0.18
+  data required time                                  0.18
+  -----------------------------------------------------------
+  data required time                                  0.18
+  data arrival time                                  -0.16
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.02
+
+
+  Startpoint: u_uart0/rx_sync1_reg
+              (rising edge-triggered flip-flop clocked by clk_cpu)
+  Endpoint: u_uart0/rx_sync2_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_cpu (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u_uart0/rx_sync1_reg/CP (DFSNQD1)        0.00 #     0.00 r
+  u_uart0/rx_sync1_reg/Q (DFSNQD1)         0.14       0.14 r
+  u_uart0/rx_sync2_reg/D (DFSNQD2)         0.00 *     0.14 r
+  data arrival time                                   0.14
+
+  clock clk_cpu (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.13       0.13
+  u_uart0/rx_sync2_reg/CP (DFSNQD2)        0.00       0.13 r
+  library hold time                        0.01       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.14
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: u_cpu/decoder_trigger_q_reg
+              (rising edge-triggered flip-flop clocked by clk_cpu)
+  Endpoint: u_cpu/decoder_trigger_reg
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_cpu (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_cpu/decoder_trigger_q_reg/CP (DFCNQD1)                0.00 #     0.00 r
+  u_cpu/decoder_trigger_q_reg/Q (DFCNQD1)                 0.16       0.16 r
+  U10872/ZN (NR3D0)                                       0.03 *     0.19 f
+  u_cpu/decoder_trigger_reg/D (DFCNQD1)                   0.00 *     0.19 f
+  data arrival time                                                  0.19
+
+  clock clk_cpu (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_cpu/decoder_trigger_reg/CP (DFCNQD1)                  0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_uart0/tx_baud_cnt_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_cpu)
+  Endpoint: u_uart0/tx_baud_cnt_reg[3]
+            (rising edge-triggered flip-flop clocked by clk_cpu)
+  Path Group: clk_cpu
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_cpu (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_uart0/tx_baud_cnt_reg[3]/CP (DFCNQD1)                 0.00 #     0.00 r
+  u_uart0/tx_baud_cnt_reg[3]/Q (DFCNQD1)                  0.16       0.16 r
+  U10943/ZN (MUX2ND0)                                     0.03 *     0.19 f
+  u_uart0/tx_baud_cnt_reg[3]/D (DFCNQD1)                  0.00 *     0.19 f
+  data arrival time                                                  0.19
+
+  clock clk_cpu (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.13       0.13
+  u_uart0/tx_baud_cnt_reg[3]/CP (DFCNQD1)                 0.00       0.13 r
+  library hold time                                       0.05       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1
